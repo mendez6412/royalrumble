@@ -3,10 +3,15 @@ let entrants = _.shuffle(superstars.wrestlers)
 function revealEntrant(entrant) {
   let selection = _.find(entrants, {'id': _.toNumber(entrant.getAttribute('value'))})
   console.log(selection, $(entrant))
-  $(entrant).addClass('unavailable').removeClass('available')
-  $(entrant).find("h3").removeClass('hidden')
-  $('#modalTitle').text(selection.name)
-  $('#youtube').attr('src', selection.song)
+  if($(entrant).hasClass('available')){
+    $(entrant).addClass('unavailable').removeClass('available')
+    $(entrant).find("h3").removeClass('hidden')
+    $('#modalTitle').text(selection.name)
+    $('#youtube').attr('src', selection.song)
+  }
+  else{
+    $(entrant).attr('data-toggle', '')
+  }
 }
 
 let entryCounter = 0

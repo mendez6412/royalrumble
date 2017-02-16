@@ -6,6 +6,14 @@
   visibility: hidden;
 }
 
+.unavailable {
+  cursor: not-allowed;
+}
+
+/*.unavailable:hover {
+  pointer-events: none;
+}*/
+
 #videoWrapper {
   text-align: center;
 }
