@@ -1,5 +1,6 @@
-.card:hover {
-  background-color: yellow;
+.available:hover {
+  box-shadow: 0 0 6px steelblue;
+  transition: all 200ms ease-out;
 }
 
 .hidden {
@@ -9,10 +10,6 @@
 .unavailable {
   cursor: not-allowed;
 }
-
-/*.unavailable:hover {
-  pointer-events: none;
-}*/
 
 #videoWrapper {
   text-align: center;
@@ -42,6 +39,11 @@
   .card > img {
     height: 100%;
     width: 100%;
+  }
+  
+  .available:hover {
+    box-shadow: 0 0 50px steelblue;
+    transition: all 200ms ease-out;
   }
   
   .modal-xl {

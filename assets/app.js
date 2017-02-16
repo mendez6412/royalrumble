@@ -20,7 +20,7 @@ _.forEach(entrants,(entry) => {
   entryCounter ++
   currentRow = "#row" + row
   entry.id = entryCounter
-  $( "<div class='col-lg-2'><div class='card available' value=" + entry.id + " onClick=revealEntrant(this) data-toggle='modal' data-target='#myModal'><img class='card-img img-fluid hidden' src='http://www.wwe.com/f/styles/talent_champion_xl/public/rd-talent/Profile/Big_E_pro.png' alt='Card image'></div></div>" ).appendTo( currentRow );
+  $( "<div class='col-lg-2'><div class='card available' value=" + entry.id + " onClick=revealEntrant(this) data-toggle='modal' data-target='#myModal'><img class='card-img img-fluid hidden' src='" + entry.image + "' alt='Card image'></div></div>" ).appendTo( currentRow );
   if(entryCounter % 5 === 0){
       row ++
   }
