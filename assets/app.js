@@ -5,6 +5,8 @@ function revealEntrant(entrant) {
   console.log(selection, $(entrant))
   $(entrant).addClass('unavailable').removeClass('available')
   $(entrant).find("h3").removeClass('hidden')
+  $('#modalTitle').text(selection.name)
+  $('#youtube').attr('src', selection.song)
 }
 
 let entryCounter = 0
