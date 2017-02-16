@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Royal Rumble 2017</title>
-    <link rel="stylesheet" href="assets/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style.css">
   </head>
   <body>
     <nav class="navbar navbar-inverse bg-inverse">
@@ -26,14 +26,17 @@
       </div>
     </div>
 
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl" role="document">
         <div class="modal-content">
           <div class="modal-body">
             <div class="modal-header">
               <h5 class="modal-title" id="modalTitle"></h5>
             </div>
-            <iframe id="youtube" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+            <br>
+            <div id="videoWrapper">
+              <iframe id="youtube" width="1120" height="630" frameborder="0" allowfullscreen></iframe>
+            </div>
           </div>
         </div>
       </div>

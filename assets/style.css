@@ -5,3 +5,14 @@
 .hidden {
   visibility: hidden;
 }
+
+#videoWrapper {
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .modal-xl {
+    width: 90%;
+    max-width: 1200px;
+  }
+}
