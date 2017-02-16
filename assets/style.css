@@ -24,3 +24,27 @@
     max-width: 1200px;
   }
 }
+
+@media (min-width: 3000px) {
+  .container-fluid {
+    height: 100vh;
+  }
+  .container-fluid > .row {
+    height: 16%;
+  }
+  
+  .card {
+    height: 90%;
+  }
+  
+  .modal-xl {
+    width: 90%;
+    max-width: 3200px;
+    margin: 250px auto;
+  }
+  
+  iframe {
+    width: 3000px;
+    height: 1500px;
+  }
+}

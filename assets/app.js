@@ -20,7 +20,7 @@ _.forEach(entrants,(entry) => {
   entryCounter ++
   currentRow = "#row" + row
   entry.id = entryCounter
-  $( "<div class='col-sm-2'><div class='card available' value=" + entry.id + " onClick=revealEntrant(this) data-toggle='modal' data-target='#myModal'><div class='card-block'><h3 class='card-title hidden'>" + entry.name + "</h3></div></div></div>" ).appendTo( currentRow );
+  $( "<div class='col-lg-2'><div class='card available' value=" + entry.id + " onClick=revealEntrant(this) data-toggle='modal' data-target='#myModal'><div class='card-block'><h3 class='card-title hidden'>" + entry.name + "</h3></div></div></div>" ).appendTo( currentRow );
   if(entryCounter % 5 === 0){
       row ++
   }
