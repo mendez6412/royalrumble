@@ -2,7 +2,6 @@ let entrants = _.shuffle(superstars.wrestlers)
 
 function revealEntrant(entrant) {
   let selection = _.find(entrants, {'id': _.toNumber(entrant.getAttribute('value'))})
-  console.log(selection, $(entrant))
   if($(entrant).hasClass('available')){
     $(entrant).addClass('unavailable').removeClass('available')
     $(entrant).find("img").removeClass('hidden')

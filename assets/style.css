@@ -1,6 +1,10 @@
+body {
+  background-color: black;
+}
+
 .available:hover {
-  box-shadow: 0 0 6px steelblue;
-  transition: all 200ms ease-out;
+  box-shadow: 0 0 10px steelblue;
+  transition: all 6ms ease-out;
 }
 
 .hidden {
@@ -29,29 +33,29 @@
   .container-fluid > .row {
     height: 16%;
   }
-  
+
   .card {
     height: 90%;
     border: 1px solid black;
     margin: 5px;
   }
-  
+
   .card > img {
     height: 100%;
     width: 100%;
   }
-  
+
   .available:hover {
     box-shadow: 0 0 50px steelblue;
     transition: all 200ms ease-out;
   }
-  
+
   .modal-xl {
     width: 90%;
     max-width: 3200px;
     margin: 250px auto;
   }
-  
+
   iframe {
     width: 3000px;
     height: 1500px;
