@@ -6,8 +6,7 @@
 
 ## Next Steps
 - Short Term
-	- Disable Unavailable Superstars
-	- Embiggen Video Player
 	- Design/Layout Improvements
 - Long Term
 	- Support other people's browsers
+	- Mobile view + Users
